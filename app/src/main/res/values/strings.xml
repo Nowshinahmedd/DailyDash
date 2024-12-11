@@ -1,4 +1,17 @@
 <resources>
-    <string name="app_name">Foodiee</string>
-
+    <string name="app_name">Daily Dash</string>
+    <string name="high_priority">High Priority</string>
+    <string name="low_priority">Low Priority</string>
+    <string name="medium_priority">Medium Priority</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="E_mail">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="Password">Password</string>
+    <string name="Register">Register</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="calendar">Calendar</string>
+    <string name="Login">Login</string>
+    <string name="welcome_to_daily_dash">Welcome to Daily Dash</string>
+    <string name="task_list">Task List</string>
+    <string name="notification_settings">Notification Settings</string>
 </resources>

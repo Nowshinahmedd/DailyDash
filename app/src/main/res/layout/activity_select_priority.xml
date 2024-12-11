@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imageHighPriority"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:contentDescription="high_priority"
+        android:src="@drawable/high"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonHighPriority"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="High Priority" />
+
+    <ImageView
+        android:id="@+id/imageMediumPriority"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:contentDescription="medium_priority"
+        android:src="@drawable/medium"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonMediumPriority"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Medium Priority" />
+
+    <ImageView
+        android:id="@+id/imageLowPriority"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:contentDescription="low_priority"
+        android:src="@drawable/low" />
+
+    <Button
+        android:id="@+id/buttonLowPriority"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Low Priority" />
+
+    <!-- List to display tasks -->
+    <ListView
+        android:id="@+id/taskListView"
+        android:layout_width="402dp"
+        android:layout_height="306dp" />
+
+    <!-- Edit Task Section -->
+    <EditText
+        android:id="@+id/editTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Task Title"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Task Description"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/updateTaskButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Task"
+        android:visibility="gone" />
+
+    <!-- Add this inside your layout (make sure it's where it fits your design) -->
+    <Button
+        android:id="@+id/buttonUpdateTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Task"
+        android:layout_marginTop="20dp" />
+
+</LinearLayout>

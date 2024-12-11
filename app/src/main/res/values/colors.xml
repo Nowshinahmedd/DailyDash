@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="fire_brick_500">#F4511E</color>
-    <color name="fire_brick_200">#422B0F</color>
-    <color name="Blue">#192468</color>
-    <color name="golden">#B37527</color>
+    <color name="colorPrimary">#4C2781</color>
+    <color name="colorCustomGreen">#5D8336</color> <!-- Updated color name -->
+    <color name="colorAccent">#03DAC5</color>
+    <color name="red">#A63E3E</color>
+    <color name="black">#000000</color>
+    <color name="highPriority">#FF0000</color> <!-- Red for high priority -->
+    <color name="mediumPriority">#FFA500</color> <!-- Orange for medium priority -->
+    <color name="lowPriority">#008000</color> <!-- Green for low priority -->
+    <color name="material_dynamic_neutral0">#E0E0E0</color> <!-- Example color -->
+    <color name="material_dynamic_neutral80">#B0B0B0</color> <!-- Example color -->
+    <color name="blue">#0D3D67</color>
 </resources>

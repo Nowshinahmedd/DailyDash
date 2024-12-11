@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "510540400750",
+    "project_id": "dashdaily-183",
+    "storage_bucket": "dashdaily-183.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510540400750:android:ddf3cc513eaa8b0c8ebe7f",
+        "android_client_info": {
+          "package_name": "com.example.project3regex"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiBDZCWDOkQLPpKc8KGXW1M22wjSZ4HTI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
