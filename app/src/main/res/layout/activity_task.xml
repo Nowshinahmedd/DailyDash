@@ -1,46 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
+    <!-- Title EditText -->
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Task Title" />
+        android:hint="Task Title"
+        android:inputType="text" />
 
+    <!-- Description EditText -->
     <EditText
         android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Task Description" />
+        android:hint="Task Description"
+        android:inputType="textMultiLine" />
 
+    <!-- Priority Spinner -->
+    <Spinner
+        android:id="@+id/prioritySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Date EditText -->
     <EditText
-        android:id="@+id/priorityEditText"
+        android:id="@+id/dateEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Priority (High/Medium/Low)" />
+        android:hint="Select Date"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none" />
 
-    <!-- Save button for new tasks -->
+    <!-- Date Button -->
+    <Button
+        android:id="@+id/dateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick Date" />
+
+    <!-- Notification Switch -->
+    <Switch
+        android:id="@+id/notificationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Notification" />
+
+    <!-- Save Button -->
     <Button
         android:id="@+id/saveButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Save Task" />
 
-    <!-- Update button for existing tasks -->
+    <!-- Update Button -->
     <Button
         android:id="@+id/updateButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Update Task"
-        android:visibility="gone" />
+        android:text="Update Task" />
 
+    <!-- Navigate to Priority Page Button -->
     <Button
         android:id="@+id/navigateToPriority"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Go to Priority Page" />
+
+    <!-- RecyclerView to Display Tasks -->
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/taskRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    android:layout_marginBottom="16dp"
+    tools:listitem="@layout/task_item" />
+
+
 </LinearLayout>

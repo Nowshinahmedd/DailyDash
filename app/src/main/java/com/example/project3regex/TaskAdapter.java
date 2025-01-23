@@ -4,34 +4,21 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class TaskAdapter extends BaseAdapter {
+public class TaskAdapter extends ArrayAdapter<Task> {
 
-    private Context context;
-    private ArrayList<Task> taskList;
+    private final Context context;
+    private final List<Task> taskList;
 
-    public TaskAdapter(Context context, ArrayList<Task> taskList) {
+    // Constructor with Context first, then List<Task>
+    public TaskAdapter(Context context, List<Task> taskList) {
+        super(context, R.layout.task_item, taskList);
         this.context = context;
         this.taskList = taskList;
-    }
-
-    @Override
-    public int getCount() {
-        return taskList.size();
-    }
-
-    @Override
-    public Object getItem(int position) {
-        return taskList.get(position);
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
     }
 
     @Override
@@ -42,11 +29,14 @@ public class TaskAdapter extends BaseAdapter {
         }
 
         Task task = taskList.get(position);
+
         TextView titleTextView = convertView.findViewById(R.id.titleTextView);
         TextView priorityTextView = convertView.findViewById(R.id.priorityTextView);
+        TextView dateTextView = convertView.findViewById(R.id.dateTextView);
 
         titleTextView.setText(task.getTitle());
         priorityTextView.setText(task.getPriority());
+        dateTextView.setText(task.getDate());
 
         return convertView;
     }

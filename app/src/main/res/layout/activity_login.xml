@@ -6,7 +6,19 @@
     android:padding="16dp"
     android:gravity="center">
 
+    <!-- App Logo -->
+
     <!-- Email Input -->
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100dp"
+        android:alpha="1.5"
+        android:contentDescription="App Logo"
+        android:src="@drawable/logo" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
